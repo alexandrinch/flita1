@@ -18,7 +18,7 @@ int binaryToDecimal(char binaryNumber[DATA_SIZE]);
 void printBinarySet(binaryNode_t *head);
 void printDecimalSet(binaryNode_t *head);
 bool isUniqueNode(binaryNode_t *head, char data[DATA_SIZE]);
-int isBinary(char data[]);
+int checkBinary(char data[]);
 
 
 #endif //DZ1_BINARY_H

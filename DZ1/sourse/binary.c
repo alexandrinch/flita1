@@ -42,7 +42,7 @@ bool isUniqueNode(binaryNode_t *head, char data[]) {
     return true;
 }
 
-int isBinary(char data[]) {
+int checkBinary(char data[]) {
     int isBinary = 1;
 
     if (strcmp(data, "/exit") == 0) {

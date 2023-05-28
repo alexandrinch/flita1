@@ -12,14 +12,14 @@ int main() {
 
     while (strcmp(data, "/exit") != 0) {
         scanf("%s", data);
-        if (isBinary(data) == 0) {
+        if (checkBinary(data) == 0) {
             if (isUniqueNode(binaryHeadNode, data)) {
                 binaryTemporaryNode = createBinaryNode(data);
                 binaryTemporaryNode->pointer = binaryHeadNode;
                 binaryHeadNode = binaryTemporaryNode;
             } else
                 puts("This number is not unique! Try again");
-        } else if (isBinary(data) == 2) {
+        } else if (checkBinary(data) == 2) {
             puts("Binary set filling finished");
         } else
             puts("Please enter a binary digit!");
@@ -36,5 +36,3 @@ int main() {
     }
     return 0;
 }
-//101000101010100101101000101010100101101000101010100101
-//101000101010100101101000101010100101101000101010100101101000101010100101
